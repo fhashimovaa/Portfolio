@@ -1,0 +1,240 @@
+.custom-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.container-fluid {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    // padding-right: 12px;
+    // padding-left: 12px;
+}
+
+@media (min-width: 320px) {
+    .custom-container {
+        max-width: 300px;
+
+    }
+
+}
+
+@media (min-width: 380px) {
+    .custom-container {
+        max-width: 360px;
+    }
+
+}
+
+@media (min-width: 420px) {
+    .custom-container {
+        max-width: 400px;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .custom-container {
+        max-width: 545px;
+    }
+
+}
+
+@media (min-width: 575.98px) {
+    .custom-container {
+        max-width: 600px;
+    }
+   
+
+}
+
+@media (min-width: 767.98px) {
+    .custom-container {
+        max-width: 755px;
+    }
+    
+    
+}
+
+@media (min-width: 991.98px) {
+    .custom-container {
+        max-width: 830px;
+    }
+    // nav{
+    //     display: none !important;
+    // }
+    nav{
+        display: block !important;
+    }
+    
+}
+
+@media (min-width: 1199.98px) {
+    .custom-container {
+        max-width: 1100px;
+    }
+    
+
+}
+
+
+
+
+
+
+@media (max-width: 1600px) {
+   
+}
+
+@media (max-width: 1199.98px) {
+    .skills {
+
+
+        &__content {
+            max-width: 900px;
+
+            &-theme {
+                &-first {
+
+                    &-icon {
+                        padding: 10px 35px !important;
+
+                        .iconHtml::after {
+                            display: none;
+                        }
+
+                        .iconCss::after {
+                            display: none;
+                        }
+
+                        .iconJavaScript::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                &-second {
+                    &-icon {
+                        padding: 10px 20px !important;
+
+                        .iconJquery::after {
+                            display: none;
+                        }
+
+                        .iconReact::after {
+                            display: none;
+                        }
+
+                        .iconSass::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                &-last {
+                    &-icon {
+                        padding: 10px 35px !important;
+
+                        .iconBoostrap::after {
+                            display: none;
+                        }
+
+                        .iconGit::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__opacity {
+            max-width: 900px;
+            max-height: 670px;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .skills {
+        &__content {
+            max-width: 720px;
+
+            &-theme {
+                &-first {
+
+                    &-icon {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        &__opacity {
+            max-width: 720px;
+        }
+    }
+
+    .contact__content-theme-col{
+       height: 350px !important;
+    }
+    .contact__content-theme button{
+        margin-bottom: 15px;
+    }
+}
+.about__content-heading span{
+    white-space: nowrap;
+}
+nav{
+    display: none !important;
+}
+
+
+
+
+@media (max-width: 767.98px) {
+    .skills {
+        &__content {
+            max-width: 500px;
+
+        }
+
+        &__opacity {
+            max-width: 500px;
+        }
+    }
+
+    .contact__content-theme-col{
+        max-height: 242px;
+    }
+    .language{
+        height: 700px !important;
+    }
+    .language_wrapper{
+        margin-bottom: 10px !important;
+        
+    }
+    
+
+}
+
+@media (max-width: 575.98px) {
+    .language{
+        height: 700px !important;
+    }
+
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 380px) {}
+
+@media (max-width: 320px) {}

@@ -1,0 +1,10 @@
+.footer{
+    background-image: linear-gradient(315deg, #ffffff 0%, #e6ccb3 74%);
+    padding: 10px;
+    
+
+    & p{
+        text-align: center;
+        color: $brown3;
+    }
+}

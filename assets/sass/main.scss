@@ -1,0 +1,20 @@
+@import './abstracts/varibles';
+@import './abstracts/mixins';
+
+@import './vendors/bootstrap/bootstrap-grid.scss';
+@import './vendors/bootstrap/bootstrap-utilities.scss';
+@import './vendors/bootstrap/bootstrap-reboot.scss';
+@import './vendor-extensions/bootsrap';
+
+@import './base/animation';
+@import './base/base';
+@import './base/font';
+@import './base/resets';
+@import './base/typography';
+
+@import './components/buttons';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/home';

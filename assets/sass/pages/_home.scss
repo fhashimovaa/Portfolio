@@ -1,0 +1,602 @@
+body {
+    background-color: black;
+}
+
+.information {
+    background-color: black;
+    background-image: url("./../image/fidans.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+
+    &__content {
+
+        &-title {
+            position: relative;
+
+            & h1 {
+                color: $brown1;
+                font-size: $XLareg;
+                display: inline-block;
+                position: absolute;
+                top: 200px;
+                font-style: italic;
+                @include animation;
+            }
+
+            & h1:hover {
+                --i: 1;
+            }
+
+
+            & h3 {
+                color: $brown1;
+                position: absolute;
+                top: 400px;
+                left: 250px;
+                font-style: italic;
+                @include animation;
+            }
+
+            & h3:hover {
+                --i: 1;
+            }
+
+            & a{
+                color: $brown1 !important;
+                position: absolute;
+                top: 550px;
+                left: 150px;
+                font-style: italic;
+                font-size: $big;
+                @include animation;
+            }
+            & a:hover {
+                --i: 1;
+            }
+
+        }
+    }
+}
+
+.about {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__content {
+        opacity: 0;
+        transform: translate(0, 10vh);
+        transition: all 2s;
+
+
+        &-title {
+            color: $brown1 ;
+            text-align: center;
+            font-size: $large;
+        }
+
+
+        &-heading {
+            padding-top: 50px;
+
+            & i {
+                color: $brown1;
+            }
+
+            & span {
+                color: $brown1;
+                border: 1px solid $brown1 ;
+                border-radius: 30%;
+                padding: 3px;
+            }
+
+            &-line {
+                width: 72%;
+                height: 1px;
+                vertical-align: middle;
+                background-color: $brown2;
+                display: inline-block;
+            }
+
+        }
+
+        &-theme {
+            padding-top: 20px;
+
+            & p {
+                font-size: $big;
+                color: $brown1;
+                font-weight: bold;
+
+            }
+
+            &-paragraph {
+                font-size: $medium !important;
+                padding-top: 15px;
+                font-weight: normal !important;
+                text-align: justify;
+            }
+        }
+
+
+    }
+
+    &__content.visible {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+
+    &__blur {
+        background-image: url("./../image/front.avif");
+        min-height: 1100px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(4px);
+        width: 100%;
+        filter: blur(4px);
+        z-index: -3;
+        position: relative;
+
+    }
+
+    &__opacity {
+        background-color: black;
+        opacity: 0.5;
+        height: 950px;
+        margin-top: 70px;
+        position: absolute;
+        top: 0px;
+        z-index: 999;
+        width: 1000px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+
+
+
+    }
+
+
+    &__content {
+        top: 100px;
+        position: absolute;
+        z-index: 99999;
+        width: 1000px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+
+
+
+
+
+        & p {
+            font-size: $large;
+            color: $brown1;
+            text-align: center;
+            margin-top: 25px;
+
+        }
+
+        &-theme {
+
+            margin-top: 30px;
+
+            &-first {
+                display: flex;
+                justify-content: space-around;
+
+                &-icon {
+                    padding: 50px 70px;
+                    background:
+                        linear-gradient($brown3 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + .08em);
+                    transition: .3s calc(var(--i, 0) * .3s), background-position .3s calc(.3s - calc(var(--i, 0) * .3s));
+
+                    .iconHtml {
+                        @include title;
+
+                    }
+
+                    .iconHtml::after {
+                        @include icon1;
+                        left: 128px;
+                    }
+
+                    .iconCss {
+                        @include title;
+                    }
+
+                    .iconCss::after {
+                        @include icon1;
+                        left: 446px;
+                    }
+
+
+                    .iconJavaScript {
+                        @include title;
+                    }
+
+                    .iconJavaScript::after {
+                        @include icon1;
+                        right: 153px;
+                    }
+
+                    & h5 {
+                        color: $brown1;
+                        padding: 30px 0 0;
+                        transition: 0.7s;
+                        text-align: center;
+
+                    }
+
+                }
+
+                &-icon:hover {
+                    background-color: $brown3;
+                    --i: 1;
+                }
+
+                &-icon:hover h5 {
+                    transition: 0.7s;
+                    padding: 3px 0 0;
+                }
+
+                &-icon:hover .iconHtml::after {
+                    @include icon1Hover;
+                }
+
+                &-icon:hover .iconCss::after {
+                    @include icon1Hover;
+                }
+
+                &-icon:hover .iconJavaScript::after {
+                    @include icon1Hover;
+                }
+            }
+
+            &-second {
+
+                @include flexbox;
+                margin-top: 40px;
+
+
+                &-icon {
+                    padding: 50px 70px;
+                    background:
+                        linear-gradient($brown3 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + .08em);
+                    transition: .3s calc(var(--i, 0) * .3s), background-position .3s calc(.3s - calc(var(--i, 0) * .3s));
+
+                    .iconJquery {
+                        @include title;
+                    }
+
+                    .iconJquery::after {
+                        @include icon2;
+                        left: 122px;
+                    }
+
+                    .iconReact {
+                        @include title;
+                    }
+
+                    .iconReact::after {
+                        @include icon2;
+                        left: 459px;
+                    }
+
+                    .iconSass {
+                        @include title;
+                    }
+
+                    .iconSass::after {
+                        @include icon2;
+                        right: 135px;
+                    }
+
+                    & h5 {
+                        color: $brown1;
+                        padding: 30px 0 0;
+                        transition: 0.7s;
+                        text-align: center;
+
+                    }
+                }
+
+                &-icon:hover {
+                    background-color: $brown3;
+                    --i: 1;
+                }
+
+                &-icon:hover h5 {
+                    transition: 0.7s;
+                    padding: 3px 0 0;
+                }
+
+                &-icon:hover .iconJquery::after {
+                    @include icon2Hover;
+                }
+
+                &-icon:hover .iconReact::after {
+                    @include icon2Hover;
+                }
+
+                &-icon:hover .iconSass::after {
+                    @include icon2Hover;
+
+                }
+
+            }
+
+            &-last {
+                margin-top: 50px;
+                @include flexbox;
+
+                &-icon {
+                    padding: 50px 70px;
+                    background:
+                        linear-gradient($brown3 0 0) no-repeat calc(200% - var(--i, 0) * 100%) 100% / 200% calc(100% * var(--i, 0) + .08em);
+                    transition: .3s calc(var(--i, 0) * .3s), background-position .3s calc(.3s - calc(var(--i, 0) * .3s));
+
+                    .iconBoostrap {
+                        @include title;
+
+                    }
+
+                    .iconBoostrap::after {
+                        @include icon3;
+                        left: 231px;
+
+                    }
+
+                    .iconGit {
+                        @include title;
+                    }
+
+                    .iconGit::after {
+                        @include icon3;
+                        right: 209px;
+                    }
+
+                    & h5 {
+                        color: $brown1;
+                        padding: 30px 0 0;
+                        transition: 0.7s;
+                        text-align: center;
+
+                    }
+                }
+
+                &-icon:hover {
+                    background-color: $brown3;
+                    --i: 1;
+                }
+
+                &-icon:hover h5 {
+                    transition: 0.7s;
+                    padding: 3px 0 0;
+                }
+
+                &-icon:hover .iconBoostrap::after {
+                    @include icon3Hover;
+                }
+
+                &-icon:hover .iconGit::after {
+                    @include icon3Hover;
+                }
+            }
+
+        }
+    }
+
+    &__box {
+
+        &-content {
+            background-image: url("./../image/stars.avif");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px;
+
+            & ul {
+
+
+                & li {
+                    color: $brown1;
+                    font-size: $big;
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 20px 0px;
+                    border-bottom: 1px solid #f2e6d9;
+                    transition: 1s;
+
+
+                    & p {
+                        margin-left: 80px;
+                    }
+
+                    & i {
+                        font-size: 30px;
+                        position: absolute;
+
+
+                    }
+
+
+
+                }
+
+                & li:hover {
+                    font-size: 28px;
+                    transition: 1.5s;
+
+                }
+
+                & li:hover i {
+                    animation: wiggle 2.5s linear infinite;
+                    font-size: 35px;
+                    transition: 1.5s;
+
+                }
+
+            }
+        }
+    }
+}
+
+.language {
+    background-image: url("./../image/img2.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    height: 500px;
+
+
+    &__content {
+      
+        & p {
+            font-size: $large;
+            color: $brown1;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+       
+
+        &-box{
+            background-color: $brown3;
+            padding: 20px;
+            
+
+            &-details{
+                background-color:#d9b38c ;
+                padding: 40px;
+                text-align: center;
+                font-size: $large;
+                
+            }
+
+            &-info{
+                // padding: 40px;
+                padding: 24px 5px;
+                background-color: #d9b38c;
+                display: none;
+                
+                & :first-child{
+                    width: 25px;
+                }
+                & :last-child{
+                    padding-top: 20px;
+                }
+                & :nth-child(2){
+                    font-weight: bold;
+                }
+            }
+
+           
+        }
+
+        &-box:hover .language__content-box-info{
+            display: block;
+            height: 150px;
+        }
+       
+        &-box:hover .language__content-box-details{
+            display: none;
+        }
+
+        
+
+    }
+}
+
+.contact {
+    background-image: url("./../image/contactimg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding-top: 15px;
+
+    &__content {
+        position: relative;
+
+        & p {
+            font-size: $large;
+            color: $brown1;
+            text-align: center;
+
+        }
+
+        &-theme {
+            position: absolute;
+            top: 180px;
+
+            & input {
+                width: 49.4%;
+                margin-bottom: 20px;
+                padding: 15px;
+                border: 1px solid #ccc;
+
+            }
+
+            & button {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 5%;
+                font-weight: bold;
+
+
+            }
+
+            .text {
+                width: 99.6%;
+            }
+
+            &-col {
+                background-color: black;
+                border-radius: 10px;
+                padding: 20px 16px;
+                height: 310px;
+                opacity: 0.70;
+
+                &-box {
+                    padding-bottom: 20px;
+                    display: flex;
+                    justify-content: left;
+
+                    & span {
+                        font-size: $big;
+                        text-align: left;
+                        margin-bottom: 8px;
+                        color: rgba(255, 255, 255, 0.8);
+                        padding-left: 30px;
+                    }
+
+                    & i {
+                        font-size: 30px;
+                        color: black;
+                        background-color: rgba(255, 255, 255, 0.8);
+                        padding: 8px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
