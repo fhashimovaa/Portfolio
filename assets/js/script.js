@@ -19,6 +19,7 @@ const navbar=document.querySelector("#navbar");
 const asidemenu=document.querySelector(".header_aside");
 const navClose=document.querySelector("#closeNavBtn")
 const asideClose=document.querySelector("#asideCloseBtn");
+const asideBtn =document.querySelector("header_aside-content")
 
 const width=window.matchMedia("(min-width: 991.98px)");
 
@@ -28,6 +29,8 @@ function runEvent(){
     menuBtn.addEventListener("click",miniNavbar);
     navClose.addEventListener("click",closeNavbar);
     asideClose.addEventListener("click",closeAside);
+    asidemenu.addEventListener("click",closeAsidemenu);
+    
     
 }
 
@@ -51,6 +54,8 @@ function closeNavbar(){
 
 function closeAside(e){
     e.preventDefault()
-    asidemenu.style.left='-1550px'
+    asidemenu.style.left='-1550px';
 }
-
+function closeAsidemenu(){
+    asidemenu.style.left='-1550px';
+}

@@ -4,7 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
 .container,
 .container-fluid,
 .container-sm,
@@ -6102,7 +6101,7 @@ progress {
 
 @media (min-width: 480px) {
   .custom-container {
-    max-width: 545px; } }
+    max-width: 450px; } }
 
 @media (min-width: 575.98px) {
   .custom-container {
@@ -6114,15 +6113,15 @@ progress {
 
 @media (min-width: 991.98px) {
   .custom-container {
-    max-width: 830px; }
-  nav {
-    display: block !important; } }
+    max-width: 830px; } }
 
 @media (min-width: 1199.98px) {
   .custom-container {
     max-width: 1100px; } }
 
 @media (max-width: 1199.98px) {
+  .skills__blur {
+    height: 800px !important; }
   .skills__content {
     max-width: 900px; }
     .skills__content-theme-first-icon {
@@ -6157,33 +6156,31 @@ progress {
     .skills__content-theme-first-icon {
       padding: 10px; }
   .skills__opacity {
-    max-width: 720px; }
-  .contact__content-theme-col {
-    height: 350px !important; }
+    width: 720px !important; }
   .contact__content-theme button {
-    margin-bottom: 15px; } }
-
-.about__content-heading span {
-  white-space: nowrap; }
-
-nav {
-  display: none !important; }
+    margin-bottom: 15px; }
+  .about__content-heading span {
+    white-space: nowrap; }
+  nav {
+    display: none !important; } }
 
 @media (max-width: 767.98px) {
   .skills__content {
-    max-width: 500px; }
+    max-width: 400px; }
   .skills__opacity {
-    max-width: 500px; }
-  .contact__content-theme-col {
-    max-height: 242px; }
-  .language {
-    height: 700px !important; }
+    max-width: 465px; }
   .language_wrapper {
-    margin-bottom: 10px !important; } }
+    margin-bottom: 10px !important; }
+  .language {
+    height: 500px !important; } }
 
 @media (max-width: 575.98px) {
   .language {
-    height: 700px !important; } }
+    height: 700px !important; }
+  .language {
+    height: 500px !important; }
+  .skills__box-content p {
+    font-size: 16px; } }
 
 @keyframes wiggle {
   0%, 7% {
@@ -6446,7 +6443,7 @@ body {
   width: 100%; }
   .skills__blur {
     background-image: url("./../image/front.avif");
-    min-height: 1100px;
+    height: 1100px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -6688,8 +6685,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px; }
+    background-size: cover; }
     .skills__box-content ul li {
       color: #e6ccb3;
       font-size: 22px;
@@ -6719,34 +6715,63 @@ body {
   background-size: cover;
   padding: 50px 0px;
   height: 500px; }
-  .language__content p {
-    font-size: 40px;
-    color: #e6ccb3;
-    text-align: center;
-    margin-bottom: 40px; }
-  .language__content-box {
-    background-color: #734d26;
-    padding: 20px; }
-    .language__content-box-details {
-      background-color: #d9b38c;
-      padding: 40px;
+  .language__content {
+    color: #e6ccb3; }
+    .language__content-title {
+      font-size: 40px;
       text-align: center;
-      font-size: 40px; }
-    .language__content-box-info {
-      padding: 24px 5px;
-      background-color: #d9b38c;
-      display: none; }
-      .language__content-box-info :first-child {
-        width: 25px; }
-      .language__content-box-info :last-child {
-        padding-top: 20px; }
-      .language__content-box-info :nth-child(2) {
-        font-weight: bold; }
-  .language__content-box:hover .language__content-box-info {
-    display: block;
-    height: 150px; }
-  .language__content-box:hover .language__content-box-details {
-    display: none; }
+      margin-bottom: 40px; }
+    .language__content-wrapper {
+      padding-top: 30px; }
+      .language__content-wrapper img {
+        width: 50px; }
+      .language__content-wrapper span {
+        font-size: 22px;
+        padding-left: 10px; }
+
+.works {
+  background-image: url("./../image/blackBrown.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px; }
+  .works__content {
+    padding-top: 30px; }
+    .works__content-title {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #e6ccb3; }
+    .works__content-wrapper {
+      position: relative;
+      width: 100%;
+      display: inline-block; }
+      .works__content-wrapper img {
+        width: 80%; }
+      .works__content-wrapper-close {
+        transition: 0.8s all ease-in-out;
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        background-color: #734d26;
+        top: 0px;
+        opacity: 0; }
+        .works__content-wrapper-close i {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          font-size: 40px;
+          color: #e6ccb3; }
+        .works__content-wrapper-close span {
+          position: absolute;
+          bottom: 20px;
+          font-size: 28px;
+          color: #e6ccb3;
+          left: 30px; }
+    .works__content-wrapper:hover .works__content-wrapper-close {
+      opacity: 1;
+      transition: 0.8s all ease-in-out; }
 
 .contact {
   background-image: url("./../image/contactimg.png");
@@ -6763,8 +6788,7 @@ body {
       color: #e6ccb3;
       text-align: center; }
     .contact__content-theme {
-      position: absolute;
-      top: 180px; }
+      padding-top: 20px; }
       .contact__content-theme input {
         width: 49.4%;
         margin-bottom: 20px;
@@ -6780,8 +6804,7 @@ body {
       .contact__content-theme-col {
         background-color: black;
         border-radius: 10px;
-        padding: 20px 16px;
-        height: 310px;
+        padding: 15px 16px;
         opacity: 0.70; }
         .contact__content-theme-col-box {
           padding-bottom: 20px;
@@ -6792,7 +6815,7 @@ body {
             text-align: left;
             margin-bottom: 8px;
             color: rgba(255, 255, 255, 0.8);
-            padding-left: 30px; }
+            padding-left: 20px; }
           .contact__content-theme-col-box i {
             font-size: 30px;
             color: black;
