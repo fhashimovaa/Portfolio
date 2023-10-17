@@ -54,8 +54,8 @@ function closeNavbar(){
 
 function closeAside(e){
     e.preventDefault()
-    asidemenu.style.left='-1550px';
+    asidemenu.style.left='-1800px';
 }
 function closeAsidemenu(){
-    asidemenu.style.left='-1550px';
+    asidemenu.style.left='-1800px';
 }
