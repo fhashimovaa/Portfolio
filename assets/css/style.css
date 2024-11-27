@@ -6443,7 +6443,7 @@ body {
   width: 100%; }
   .skills__blur {
     background-image: url("./../image/front.avif");
-    height: 1100px;
+    height: 1400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -6456,7 +6456,7 @@ body {
   .skills__opacity {
     background-color: black;
     opacity: 0.5;
-    height: 950px;
+    height: 1200px;
     margin-top: 70px;
     position: absolute;
     top: 0px;
@@ -6491,7 +6491,7 @@ body {
             width: 100%;
             display: inline-block;
             text-align: center; }
-          .skills__content-theme-first-icon .iconHtml::after {
+          /* .skills__content-theme-first-icon .iconHtml::after {
             content: '';
             background-color: #e6ccb3;
             width: 60px;
@@ -6499,7 +6499,7 @@ body {
             position: absolute;
             transition: 0.7s;
             top: 235px;
-            left: 128px; }
+            left: 128px; } */
           .skills__content-theme-first-icon .iconCss {
             color: #e6ccb3;
             font-size: 60px;
@@ -6541,9 +6541,9 @@ body {
         .skills__content-theme-first-icon:hover h5 {
           transition: 0.7s;
           padding: 3px 0 0; }
-        .skills__content-theme-first-icon:hover .iconHtml::after {
+        /* .skills__content-theme-first-icon:hover .iconHtml::after {
           top: 318px;
-          transition: 0.7s; }
+          transition: 0.7s; } */
         .skills__content-theme-first-icon:hover .iconCss::after {
           top: 318px;
           transition: 0.7s; }
@@ -6639,7 +6639,7 @@ body {
             width: 100%;
             display: inline-block;
             text-align: center; }
-          .skills__content-theme-last-icon .iconBoostrap::after {
+          /* .skills__content-theme-last-icon .iconBoostrap::after {
             content: '';
             background-color: #e6ccb3;
             width: 60px;
@@ -6647,7 +6647,7 @@ body {
             position: absolute;
             transition: 0.7s;
             bottom: 95px;
-            left: 231px; }
+            left: 231px; } */
           .skills__content-theme-last-icon .iconGit {
             color: #e6ccb3;
             font-size: 60px;

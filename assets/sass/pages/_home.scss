@@ -139,7 +139,7 @@ body {
 
     &__blur {
         background-image: url("./../image/front.avif");
-        height: 1100px;
+        height: 1400px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body {
     &__opacity {
         background-color: black;
         opacity: 0.5;
-        height: 950px;
+        height: 1200px;
         margin-top: 70px;
         position: absolute;
         top: 0px;
@@ -210,29 +210,29 @@ body {
 
                     }
 
-                    .iconHtml::after {
-                        @include icon1;
-                        left: 128px;
-                    }
+                    // .iconHtml::after {
+                    //     @include icon1;
+                    //     left: 128px;
+                    // }
 
                     .iconCss {
                         @include title;
                     }
 
-                    .iconCss::after {
-                        @include icon1;
-                        left: 446px;
-                    }
+                    // .iconCss::after {
+                    //     @include icon1;
+                    //     left: 446px;
+                    // }
 
 
                     .iconJavaScript {
                         @include title;
                     }
 
-                    .iconJavaScript::after {
-                        @include icon1;
-                        right: 153px;
-                    }
+                    // .iconJavaScript::after {
+                    //     @include icon1;
+                    //     right: 153px;
+                    // }
 
                     & h5 {
                         color: $brown1;
@@ -355,20 +355,20 @@ body {
 
                     }
 
-                    .iconBoostrap::after {
-                        @include icon3;
-                        left: 231px;
+                    // .iconBoostrap::after {
+                    //     @include icon3;
+                    //     left: 231px;
 
-                    }
+                    // }
 
                     .iconGit {
                         @include title;
                     }
 
-                    .iconGit::after {
-                        @include icon3;
-                        right: 209px;
-                    }
+                    // .iconGit::after {
+                    //     @include icon3;
+                    //     right: 209px;
+                    // }
 
                     & h5 {
                         color: $brown1;
